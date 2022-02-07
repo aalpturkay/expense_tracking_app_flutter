@@ -10,8 +10,8 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 class LoginPage extends StatelessWidget {
-  TextEditingController passwordController = TextEditingController();
-  TextEditingController usernameController = TextEditingController();
+  final passwordController = TextEditingController();
+  final usernameController = TextEditingController();
   final _formKey = GlobalKey<FormState>();
 
   LoginPage({Key? key}) : super(key: key);
