@@ -27,7 +27,7 @@ class AddExpenseCubit extends Cubit<AddExpenseState> {
     required String category,
   }) async {
     try {
-      print("$description $paid $category");
+      // print("$description $paid $category");
       emit(AddExpenseLoading());
 
       final response = await expenseService.createExpense(
