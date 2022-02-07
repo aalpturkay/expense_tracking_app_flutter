@@ -1,7 +1,5 @@
 import 'package:dio/dio.dart';
-import 'package:dio/src/dio.dart';
 import 'package:expense_tracking_app/constants/path_constants.dart';
-import 'package:expense_tracking_app/enums/expense_category_type.dart';
 import 'package:expense_tracking_app/exeptions/custom_exeptions.dart';
 import 'package:expense_tracking_app/features/expense/models/expense_model.dart';
 import 'package:expense_tracking_app/features/expense/models/create_expense_response_model.dart';

@@ -1,6 +1,4 @@
 import 'package:expense_tracking_app/constants/style_constants.dart';
-import 'package:expense_tracking_app/enums/expense_category_type.dart';
-import 'package:expense_tracking_app/extensions/expense_category_type_extension.dart';
 import 'package:expense_tracking_app/extensions/string_extension.dart';
 import 'package:expense_tracking_app/features/expense/cubit/expense_cubit.dart';
 import 'package:expense_tracking_app/features/expense/widgets/expense_card.dart';

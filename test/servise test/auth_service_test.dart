@@ -1,4 +1,3 @@
-import 'package:dio/dio.dart';
 import 'package:expense_tracking_app/features/auth/models/login/login_request_model.dart';
 import 'package:expense_tracking_app/features/auth/models/register/register_request_model.dart';
 import 'package:expense_tracking_app/features/auth/services/auth_service.dart';

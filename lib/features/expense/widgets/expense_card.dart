@@ -1,7 +1,5 @@
 import 'package:expense_tracking_app/constants/style_constants.dart';
 import 'package:expense_tracking_app/enums/expense_card_label_type.dart';
-import 'package:expense_tracking_app/enums/expense_category_type.dart';
-import 'package:expense_tracking_app/extensions/expense_category_type_extension.dart';
 import 'package:expense_tracking_app/widgets/poppins_text.dart';
 import 'package:flutter/material.dart';
 
