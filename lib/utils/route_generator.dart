@@ -10,7 +10,7 @@ class RouteGenerator {
     switch (routeSettings.name) {
       case RouteConstants.registerPageRoute:
         return MaterialPageRoute(
-          builder: (context) => RegisterPage(),
+          builder: (context) => const RegisterPage(),
         );
       case RouteConstants.loginPageRoute:
         return MaterialPageRoute(

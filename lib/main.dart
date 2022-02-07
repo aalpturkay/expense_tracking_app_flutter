@@ -1,4 +1,3 @@
-import 'package:dio/dio.dart';
 import 'package:expense_tracking_app/features/auth/cubit/auth_cubit.dart';
 import 'package:expense_tracking_app/features/auth/pages/register_page.dart';
 import 'package:expense_tracking_app/features/auth/services/auth_service.dart';
@@ -28,7 +27,7 @@ Future<void> main() async {
               DioUtil.createDioInstance(),
             ),
           ),
-          child: RegisterPage(),
+          child: const RegisterPage(),
         ),
         BlocProvider(
           create: (_) => AuthCubit(
@@ -44,7 +43,7 @@ Future<void> main() async {
               DioUtil.createDioInstance(),
             ),
           ),
-          child: ExpensePage(),
+          child: const ExpensePage(),
         ),
         BlocProvider(
           create: (_) => AddExpenseCubit(
@@ -52,10 +51,10 @@ Future<void> main() async {
               DioUtil.createDioInstance(),
             ),
           ),
-          child: AddExpensePage(),
+          child: const AddExpensePage(),
         ),
       ],
-      child: MyApp(),
+      child: const MyApp(),
     ),
   );
 }

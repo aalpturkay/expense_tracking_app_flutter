@@ -1,6 +1,5 @@
 import 'package:expense_tracking_app/constants/style_constants.dart';
 import 'package:expense_tracking_app/extensions/expense_category_type_extension.dart';
-import 'package:expense_tracking_app/extensions/string_extension.dart';
 import 'package:expense_tracking_app/features/expense/cubit/add_expense_cubit.dart';
 import 'package:expense_tracking_app/features/expense/widgets/category_card.dart';
 import 'package:expense_tracking_app/widgets/custom_button.dart';
@@ -32,7 +31,7 @@ class _AddExpensePageState extends State<AddExpensePage> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              PoppinsText(
+              const PoppinsText(
                 fntSize: 24,
                 fntWeight: FontWeight.bold,
                 text: "Add your expense",
@@ -54,7 +53,7 @@ class _AddExpensePageState extends State<AddExpensePage> {
                         txtInputAction: TextInputAction.next,
                         hintText: "Short description",
                       ),
-                      SizedBox(height: 16),
+                      const SizedBox(height: 16),
                       Row(
                         children: [
                           Expanded(
@@ -109,19 +108,19 @@ class _AddExpensePageState extends State<AddExpensePage> {
                   ),
                 ),
               ),
-              PoppinsText(
+              const PoppinsText(
                 fntSize: 24,
                 fntWeight: FontWeight.bold,
                 text: "Choose category",
                 txtColor: Colors.white,
               ),
-              SizedBox(height: 16),
+              const SizedBox(height: 16),
               Expanded(
                 child: GridView.count(
                   crossAxisCount: 2,
                   crossAxisSpacing: 16,
                   mainAxisSpacing: 16,
-                  padding: EdgeInsets.all(16),
+                  padding: const EdgeInsets.all(16),
                   children: List.generate(
                     context.read<AddExpenseCubit>().expenseCategories.length,
                     (index) => CategoryCard(
