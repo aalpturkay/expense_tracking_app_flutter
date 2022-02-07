@@ -5,8 +5,8 @@ Simple and easy to use Expense Tracking App.
 ## Features
 
 - Register, Login
-- Get all expenses, Create new expense, Delete an expense
-- Get your total balance
+- Create, Delete, Get and Search Expense
+- Get Total Balance
 
 ## How it Looks?
 
