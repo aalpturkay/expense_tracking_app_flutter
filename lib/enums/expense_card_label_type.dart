@@ -1,0 +1,4 @@
+enum ExpenseCardLabelType {
+  category,
+  money,
+}
