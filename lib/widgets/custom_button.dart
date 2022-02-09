@@ -32,7 +32,7 @@ class CustomButton extends StatelessWidget {
           child: childWidget ??
               PoppinsText(
                 txtColor: titleColor ?? Colors.black,
-                fntSize: 24,
+                fntSize: Theme.of(context).textTheme.headline5?.fontSize,
                 fntWeight: FontWeight.bold,
                 text: title ?? "",
               ),

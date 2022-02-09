@@ -73,7 +73,6 @@ class MyApp extends StatelessWidget {
         textTheme: const TextTheme(
           headline3: TextStyle(fontSize: 40),
           headline4: TextStyle(fontSize: 30),
-          headline6: TextStyle(fontSize: 18),
         ),
       ),
     );

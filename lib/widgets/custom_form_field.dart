@@ -35,14 +35,14 @@ class CustomFormField extends StatelessWidget {
       style: GoogleFonts.poppins(
         color: Colors.white,
         fontWeight: FontWeight.bold,
-        fontSize: 20,
+        fontSize: Theme.of(context).textTheme.headline6?.fontSize,
       ),
       decoration: InputDecoration(
         hintText: hintText,
         hintStyle: GoogleFonts.poppins(
           color: Colors.white54,
           fontWeight: FontWeight.bold,
-          fontSize: 20,
+          fontSize: Theme.of(context).textTheme.headline6?.fontSize,
         ),
         focusedBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(16),
