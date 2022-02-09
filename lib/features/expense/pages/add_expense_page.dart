@@ -31,8 +31,8 @@ class _AddExpensePageState extends State<AddExpensePage> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const PoppinsText(
-                fntSize: 24,
+              PoppinsText(
+                fntSize: Theme.of(context).textTheme.headline5?.fontSize,
                 fntWeight: FontWeight.bold,
                 text: "Add your expense",
                 txtColor: Colors.white,
@@ -108,8 +108,8 @@ class _AddExpensePageState extends State<AddExpensePage> {
                   ),
                 ),
               ),
-              const PoppinsText(
-                fntSize: 24,
+              PoppinsText(
+                fntSize: Theme.of(context).textTheme.headline5?.fontSize,
                 fntWeight: FontWeight.bold,
                 text: "Choose category",
                 txtColor: Colors.white,

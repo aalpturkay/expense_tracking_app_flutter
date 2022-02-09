@@ -29,7 +29,7 @@ class LoginPage extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              headerTextGroup(),
+              headerTextGroup(context),
               const SizedBox(height: 64),
               Form(
                 key: _formKey,
@@ -70,7 +70,10 @@ class LoginPage extends StatelessWidget {
                           return Padding(
                             padding: const EdgeInsets.only(top: 16),
                             child: PoppinsText(
-                              fntSize: 18,
+                              fntSize: Theme.of(context)
+                                  .textTheme
+                                  .bodyText1
+                                  ?.fontSize,
                               fntWeight: FontWeight.bold,
                               text: state.message ?? "",
                               txtColor: Colors.red,
@@ -121,19 +124,19 @@ class LoginPage extends StatelessWidget {
     );
   }
 
-  Widget headerTextGroup() {
+  Widget headerTextGroup(BuildContext context) {
     return RichText(
       text: TextSpan(
         text: "Sign in and track your\n",
         style: GoogleFonts.poppins(
-          fontSize: 30,
+          fontSize: Theme.of(context).textTheme.headline4?.fontSize,
           fontWeight: FontWeight.bold,
         ),
         children: [
           TextSpan(
             text: "Expenses.",
             style: GoogleFonts.poppins(
-              fontSize: 30,
+              fontSize: Theme.of(context).textTheme.headline4?.fontSize,
               fontWeight: FontWeight.bold,
               color: StyleConstants.secondaryColor,
             ),

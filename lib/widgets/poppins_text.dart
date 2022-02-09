@@ -4,7 +4,7 @@ import 'package:google_fonts/google_fonts.dart';
 class PoppinsText extends StatelessWidget {
   final String text;
   final Color txtColor;
-  final double fntSize;
+  final double? fntSize;
   final FontWeight fntWeight;
   final TextAlign? textAlign;
   const PoppinsText({

@@ -57,7 +57,7 @@ class ExpenseCard extends StatelessWidget {
               Padding(
                 padding: const EdgeInsets.only(left: 6),
                 child: PoppinsText(
-                  fntSize: 18,
+                  fntSize: Theme.of(context).textTheme.headline6?.fontSize,
                   fntWeight: FontWeight.normal,
                   text: expenseDescription,
                   txtColor: Colors.white,

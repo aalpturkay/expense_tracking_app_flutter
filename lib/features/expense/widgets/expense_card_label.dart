@@ -24,7 +24,7 @@ class ExpenseCardLabel extends StatelessWidget {
         borderRadius: BorderRadius.circular(16),
       ),
       child: PoppinsText(
-        fntSize: 18,
+        fntSize: Theme.of(context).textTheme.headline6?.fontSize,
         fntWeight: FontWeight.bold,
         text: lblText,
         txtColor: Colors.white,

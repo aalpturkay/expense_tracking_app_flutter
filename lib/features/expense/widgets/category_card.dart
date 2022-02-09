@@ -39,7 +39,7 @@ class CategoryCard extends StatelessWidget {
               width: 64,
             ),
             PoppinsText(
-              fntSize: 17,
+              fntSize: Theme.of(context).textTheme.bodyText1?.fontSize,
               fntWeight: FontWeight.bold,
               text: categoryName,
               txtColor: Colors.white,

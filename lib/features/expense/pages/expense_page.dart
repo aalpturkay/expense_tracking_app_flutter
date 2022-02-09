@@ -25,9 +25,9 @@ class ExpensePage extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
-              const Center(
+              Center(
                 child: PoppinsText(
-                  fntSize: 24,
+                  fntSize: Theme.of(context).textTheme.headline5?.fontSize,
                   fntWeight: FontWeight.bold,
                   text: "Total Balance",
                   txtColor: Colors.white,
@@ -38,7 +38,8 @@ class ExpensePage extends StatelessWidget {
                   if (state is ExpenseLoaded) {
                     return Center(
                       child: PoppinsText(
-                        fntSize: 40,
+                        fntSize:
+                            Theme.of(context).textTheme.headline3?.fontSize,
                         fntWeight: FontWeight.bold,
                         text: "\$${state.balance ?? "0"}",
                         txtColor: Colors.white,

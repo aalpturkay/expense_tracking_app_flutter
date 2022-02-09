@@ -37,7 +37,7 @@ class _RegisterPageState extends State<RegisterPage> {
             crossAxisAlignment: CrossAxisAlignment.center,
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              headerTextGroup(),
+              headerTextGroup(context),
               Form(
                 key: _formKey,
                 child: Column(
@@ -79,7 +79,10 @@ class _RegisterPageState extends State<RegisterPage> {
                           return Padding(
                             padding: const EdgeInsets.only(top: 16),
                             child: PoppinsText(
-                              fntSize: 18,
+                              fntSize: Theme.of(context)
+                                  .textTheme
+                                  .bodyText1
+                                  ?.fontSize,
                               fntWeight: FontWeight.bold,
                               text: state.message ?? "",
                               txtColor: Colors.red,
@@ -128,26 +131,26 @@ class _RegisterPageState extends State<RegisterPage> {
     );
   }
 
-  Widget headerTextGroup() {
+  Widget headerTextGroup(BuildContext context) {
     return RichText(
       text: TextSpan(
         text: "Let's register\n",
         style: GoogleFonts.poppins(
-          fontSize: 30,
+          fontSize: Theme.of(context).textTheme.headline4?.fontSize,
           fontWeight: FontWeight.bold,
         ),
         children: [
           TextSpan(
             text: "to ",
             style: GoogleFonts.poppins(
-              fontSize: 30,
+              fontSize: Theme.of(context).textTheme.headline4?.fontSize,
               fontWeight: FontWeight.bold,
             ),
           ),
           TextSpan(
             text: "monitorize ",
             style: GoogleFonts.poppins(
-              fontSize: 30,
+              fontSize: Theme.of(context).textTheme.headline4?.fontSize,
               fontWeight: FontWeight.bold,
               color: StyleConstants.secondaryColor,
             ),
@@ -155,7 +158,7 @@ class _RegisterPageState extends State<RegisterPage> {
           TextSpan(
             text: "your 💰",
             style: GoogleFonts.poppins(
-              fontSize: 30,
+              fontSize: Theme.of(context).textTheme.headline4?.fontSize,
               fontWeight: FontWeight.bold,
             ),
           ),

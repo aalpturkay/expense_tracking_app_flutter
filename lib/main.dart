@@ -69,6 +69,13 @@ class MyApp extends StatelessWidget {
       title: 'Expense Tracking App',
       initialRoute: isTokenEmpty ? '/registerPage' : '/expensePage',
       onGenerateRoute: RouteGenerator.generateRoute,
+      theme: ThemeData(
+        textTheme: const TextTheme(
+          headline3: TextStyle(fontSize: 40),
+          headline4: TextStyle(fontSize: 30),
+          headline6: TextStyle(fontSize: 18),
+        ),
+      ),
     );
   }
 }

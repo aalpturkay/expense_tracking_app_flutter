@@ -15,7 +15,7 @@ class TapableText extends StatelessWidget {
     return GestureDetector(
       onTap: onTap,
       child: PoppinsText(
-        fntSize: 10,
+        fntSize: Theme.of(context).textTheme.caption?.fontSize,
         fntWeight: FontWeight.bold,
         text: text ?? "",
         txtColor: Colors.white,
