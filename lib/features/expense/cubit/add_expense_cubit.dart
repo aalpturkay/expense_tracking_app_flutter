@@ -1,4 +1,5 @@
 import 'package:bloc/bloc.dart';
+import 'package:equatable/equatable.dart';
 import 'package:expense_tracking_app/enums/expense_category_type.dart';
 import 'package:expense_tracking_app/features/expense/models/expense_category_model.dart';
 import 'package:expense_tracking_app/features/expense/models/expense_model.dart';

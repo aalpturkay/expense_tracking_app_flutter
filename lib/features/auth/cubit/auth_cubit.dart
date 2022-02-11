@@ -1,4 +1,5 @@
 import 'package:bloc/bloc.dart';
+import 'package:equatable/equatable.dart';
 import 'package:expense_tracking_app/exeptions/custom_exeptions.dart';
 import 'package:expense_tracking_app/features/auth/models/login/login_request_model.dart';
 import 'package:expense_tracking_app/features/auth/models/register/register_request_model.dart';
