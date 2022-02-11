@@ -16,7 +16,10 @@ class ExpenseCardLabel extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
+      padding: const EdgeInsets.symmetric(
+        horizontal: StyleConstants.mdPadding,
+        vertical: StyleConstants.smPadding / 2,
+      ),
       decoration: BoxDecoration(
         color: labelType == ExpenseCardLabelType.category
             ? StyleConstants.lblCategoryColor

@@ -30,8 +30,8 @@ class _RegisterPageState extends State<RegisterPage> {
       body: SafeArea(
         child: Padding(
           padding: const EdgeInsets.symmetric(
-            vertical: 64,
-            horizontal: 24,
+            vertical: StyleConstants.xxlPadding,
+            horizontal: StyleConstants.lgPadding,
           ),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
@@ -77,7 +77,8 @@ class _RegisterPageState extends State<RegisterPage> {
                       builder: (context, state) {
                         if (state is AuthError) {
                           return Padding(
-                            padding: const EdgeInsets.only(top: 16),
+                            padding: const EdgeInsets.only(
+                                top: StyleConstants.mdPadding),
                             child: PoppinsText(
                               fntSize: Theme.of(context)
                                   .textTheme

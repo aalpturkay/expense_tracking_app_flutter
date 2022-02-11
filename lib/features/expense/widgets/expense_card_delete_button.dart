@@ -16,7 +16,7 @@ class ExpenseCardDeleteButton extends StatelessWidget {
         customBorder: const CircleBorder(),
         onTap: onPressed,
         child: Ink(
-          padding: const EdgeInsets.all(8),
+          padding: const EdgeInsets.all(StyleConstants.smPadding),
           decoration: BoxDecoration(
             shape: BoxShape.circle,
             color: StyleConstants.bgColor,

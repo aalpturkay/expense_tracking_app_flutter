@@ -27,7 +27,7 @@ class ExpenseCard extends StatelessWidget {
         onTap: () {},
         borderRadius: BorderRadius.circular(32),
         child: Ink(
-          padding: const EdgeInsets.symmetric(vertical: 16, horizontal: 16),
+          padding: const EdgeInsets.all(StyleConstants.mdPadding),
           // height: 124,
           width: double.infinity,
           decoration: BoxDecoration(
@@ -55,7 +55,7 @@ class ExpenseCard extends StatelessWidget {
               ),
               const SizedBox(height: 16),
               Padding(
-                padding: const EdgeInsets.only(left: 6),
+                padding: const EdgeInsets.only(left: StyleConstants.smPadding),
                 child: PoppinsText(
                   fntSize: Theme.of(context).textTheme.headline6?.fontSize,
                   fntWeight: FontWeight.normal,

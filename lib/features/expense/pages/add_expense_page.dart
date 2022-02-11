@@ -6,7 +6,7 @@ import 'package:expense_tracking_app/widgets/custom_button.dart';
 import 'package:expense_tracking_app/widgets/custom_form_field.dart';
 import 'package:expense_tracking_app/widgets/poppins_text.dart';
 import 'package:flutter/material.dart';
-import 'package:provider/src/provider.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
 class AddExpensePage extends StatefulWidget {
   const AddExpensePage({Key? key}) : super(key: key);
@@ -27,7 +27,7 @@ class _AddExpensePageState extends State<AddExpensePage> {
       backgroundColor: StyleConstants.bgColor,
       body: SafeArea(
         child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 16),
+          padding: const EdgeInsets.all(StyleConstants.mdPadding),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
@@ -38,7 +38,8 @@ class _AddExpensePageState extends State<AddExpensePage> {
                 txtColor: Colors.white,
               ),
               Padding(
-                padding: const EdgeInsets.symmetric(vertical: 16),
+                padding: const EdgeInsets.symmetric(
+                    vertical: StyleConstants.mdPadding),
                 child: Form(
                   key: _formKey,
                   child: Column(
@@ -120,7 +121,7 @@ class _AddExpensePageState extends State<AddExpensePage> {
                   crossAxisCount: 2,
                   crossAxisSpacing: 16,
                   mainAxisSpacing: 16,
-                  padding: const EdgeInsets.all(16),
+                  padding: const EdgeInsets.all(StyleConstants.mdPadding),
                   children: List.generate(
                     context.read<AddExpenseCubit>().expenseCategories.length,
                     (index) => CategoryCard(

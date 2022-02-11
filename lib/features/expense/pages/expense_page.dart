@@ -7,7 +7,6 @@ import 'package:expense_tracking_app/widgets/custom_form_field.dart';
 import 'package:expense_tracking_app/widgets/poppins_text.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:provider/src/provider.dart';
 
 class ExpensePage extends StatelessWidget {
   const ExpensePage({Key? key}) : super(key: key);
@@ -21,7 +20,7 @@ class ExpensePage extends StatelessWidget {
       backgroundColor: StyleConstants.bgColor,
       body: SafeArea(
         child: Padding(
-          padding: const EdgeInsets.symmetric(vertical: 16, horizontal: 16),
+          padding: const EdgeInsets.all(StyleConstants.mdPadding),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
@@ -53,7 +52,9 @@ class ExpensePage extends StatelessWidget {
                 },
               ),
               Padding(
-                padding: const EdgeInsets.symmetric(vertical: 16),
+                padding: const EdgeInsets.symmetric(
+                  vertical: StyleConstants.mdPadding,
+                ),
                 child: CustomFormField(
                   onChangedCustom: (val) async {
                     await context
@@ -78,7 +79,9 @@ class ExpensePage extends StatelessWidget {
                       child: ListView.builder(
                         itemCount: state.data?.length,
                         itemBuilder: (context, index) => Padding(
-                          padding: const EdgeInsets.only(bottom: 8),
+                          padding: const EdgeInsets.only(
+                            bottom: StyleConstants.smPadding,
+                          ),
                           child: ExpenseCard(
                             onDeleteButtonPressed: () async {
                               await context
